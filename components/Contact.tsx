@@ -1,4 +1,5 @@
-import { Mail, MapPin, FileText } from "lucide-react";
+import { Mail, MapPin, FileText, Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -38,7 +39,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="mailto:[your.email@example.com]"
+            href="mailto:rebeccasusan2003@gmail.com"
             className="flex items-center gap-4 p-5 bg-white border border-slate-200 rounded-2xl hover:border-blue-300 hover:shadow-sm transition-all group"
           >
             <div className="w-11 h-11 rounded-xl bg-sky-500 flex items-center justify-center flex-shrink-0">
@@ -47,7 +48,22 @@ export default function Contact() {
             <div>
               <p className="text-xs text-slate-400 uppercase tracking-wide font-medium mb-0.5">Email</p>
               <p className="text-slate-900 font-medium text-sm group-hover:text-blue-700 transition-colors">
-                [your.email@example.com — placeholder]
+                rebeccasusan2003@gmail.com
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="tel:7087525890"
+            className="flex items-center gap-4 p-5 bg-white border border-slate-200 rounded-2xl hover:border-blue-300 hover:shadow-sm transition-all group"
+          >
+            <div className="w-11 h-11 rounded-xl bg-slate-400 flex items-center justify-center flex-shrink-0">
+              <Phone size={20} className="text-white" />
+            </div>
+            <div>
+              <p className="text-xs text-slate-400 uppercase tracking-wide font-medium mb-0.5">Phone</p>
+              <p className="text-slate-900 font-medium text-sm group-hover:text-blue-700 transition-colors">
+                708-752-5890
               </p>
             </div>
           </a>
@@ -58,33 +74,18 @@ export default function Contact() {
             </div>
             <div>
               <p className="text-xs text-slate-400 uppercase tracking-wide font-medium mb-0.5">Location</p>
-              <p className="text-slate-900 font-medium text-sm">Greater Chicago Area</p>
+              <p className="text-slate-900 font-medium text-sm">Tinley Park, IL</p>
             </div>
           </div>
-
-          <a
-            href="/resume.pdf"
-            className="flex items-center gap-4 p-5 bg-white border border-slate-200 rounded-2xl hover:border-blue-300 hover:shadow-sm transition-all group"
-          >
-            <div className="w-11 h-11 rounded-xl bg-emerald-500 flex items-center justify-center flex-shrink-0">
-              <FileText size={20} className="text-white" />
-            </div>
-            <div>
-              <p className="text-xs text-slate-400 uppercase tracking-wide font-medium mb-0.5">Resume / CV</p>
-              <p className="text-slate-900 font-medium text-sm group-hover:text-blue-700 transition-colors">
-                Download PDF — [placeholder]
-              </p>
-            </div>
-          </a>
         </div>
 
-        {/* Social placeholder */}
-        <div className="p-4 rounded-xl border border-dashed border-blue-200 bg-blue-50/40 text-left">
-          <p className="text-xs text-blue-500 font-semibold uppercase tracking-wider mb-1">Additional Links</p>
-          <p className="text-slate-400 text-sm italic">
-            [Placeholder — add any additional social media, GitHub, or professional links]
-          </p>
-        </div>
+        <Link
+          href="/resume"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full text-sm font-medium hover:bg-blue-700 transition-colors shadow-md"
+        >
+          <FileText size={16} />
+          View Full Resume
+        </Link>
       </div>
     </section>
   );

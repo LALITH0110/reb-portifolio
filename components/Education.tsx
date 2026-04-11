@@ -7,7 +7,8 @@ const education = [
     period: "2026 – 2030 (Expected)",
     location: "[Campus — Placeholder]",
     details: [
-      "Incoming medical student",
+      "Incoming osteopathic medical student",
+      "Focus: Pediatric medicine",
       "[Additional details — placeholder]",
     ],
     badge: "Incoming",
@@ -16,15 +17,17 @@ const education = [
   },
   {
     school: "Illinois Institute of Technology",
-    degree: "Bachelor of Science, Biology (Pre-Medicine)",
+    degree: "B.S. Biology — Minors in Psychology & Pre-Medical Studies",
     period: "Aug 2022 – May 2026",
     location: "Chicago, IL",
     details: [
       "Distinguished Communicator Medal Program",
+      "Dean's List — multiple semesters",
+      "Congress of Future Medical Leaders Award of Excellence nominee (May 2022)",
       "IPRO interdisciplinary project program",
-      "[GPA, honors, relevant coursework — placeholder]",
+      "Hawk Ambassador & Lead Ambassador — Office of Undergraduate Admissions",
     ],
-    badge: "Completed",
+    badge: "May 2026",
     badgeColor: "bg-blue-100 text-blue-700",
     current: false,
   },
@@ -34,14 +37,20 @@ const awards = [
   {
     title: "Distinguished Communicator Medal",
     org: "Illinois Institute of Technology",
-    year: "[Year — placeholder]",
+    year: "2026",
     desc: "Awarded for outstanding achievement in professional communication across disciplines.",
   },
   {
-    title: "[Additional Award — Placeholder]",
-    org: "[Organization]",
-    year: "[Year]",
-    desc: "[Award description]",
+    title: "Dean's List",
+    org: "Illinois Institute of Technology",
+    year: "Multiple Semesters",
+    desc: "Recognized for academic excellence across multiple semesters at Illinois Tech.",
+  },
+  {
+    title: "Congress of Future Medical Leaders — Award of Excellence",
+    org: "National Academy of Future Physicians and Medical Scientists",
+    year: "May 2022",
+    desc: "Nominated for the Award of Excellence recognizing exceptional promise in the medical field.",
   },
 ];
 
@@ -82,7 +91,7 @@ export default function Education() {
                 </div>
                 <p className="text-slate-500 text-sm font-medium whitespace-nowrap">{e.period}</p>
               </div>
-              <ul className="mt-4 pl-15 flex flex-col gap-1">
+              <ul className="mt-4 flex flex-col gap-1.5 pl-4">
                 {e.details.map((d, i) => (
                   <li key={i} className="text-slate-600 text-sm flex items-start gap-2">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
@@ -103,7 +112,7 @@ export default function Education() {
             <Award size={22} className="text-amber-500" />
             Awards & Recognition
           </h3>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-3 gap-4">
             {awards.map((a) => (
               <div
                 key={a.title}
@@ -113,9 +122,9 @@ export default function Education() {
                   <span className="w-2 h-2 rounded-full bg-amber-400" />
                   <p className="text-xs text-amber-600 font-medium uppercase tracking-wide">{a.year}</p>
                 </div>
-                <h4 className="font-semibold text-slate-900 mb-0.5">{a.title}</h4>
-                <p className="text-blue-600 text-sm font-medium mb-2">{a.org}</p>
-                <p className="text-slate-500 text-sm leading-relaxed">{a.desc}</p>
+                <h4 className="font-semibold text-slate-900 mb-0.5 text-sm leading-snug">{a.title}</h4>
+                <p className="text-blue-600 text-xs font-medium mb-2">{a.org}</p>
+                <p className="text-slate-500 text-xs leading-relaxed">{a.desc}</p>
               </div>
             ))}
           </div>

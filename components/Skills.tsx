@@ -1,32 +1,46 @@
 const labSkills = [
   "LC-MS/MS",
+  "GC-MS",
+  "H-NMR",
+  "IR Spectroscopy",
   "Immunoassay Platforms",
   "Automated Laboratory Systems",
-  "Clinical Test Development",
-  "Endocrinology Testing",
-  "Toxicology Screening",
-  "Therapeutic Drug Monitoring",
-  "Metals Analysis",
-  "[Additional lab skill — placeholder]",
+  "Western Blot",
+  "Cell Culturing & Sterilization",
+  "Microfluidics",
+  "Autoclave Operation",
+  "Pre-analytical Procedures",
+  "Specimen Processing",
 ];
 
 const clinicalSkills = [
+  "Clinical Test Development",
+  "Translational Research",
+  "Endocrinology Testing",
+  "Immunology",
+  "Toxicology Screening",
+  "Therapeutic Drug Monitoring",
+  "Metals Analysis",
   "Patient-Centered Care",
-  "Clinical Research",
-  "Medical Communication",
-  "Translational Medicine",
-  "Laboratory Medicine",
-  "[Additional clinical skill — placeholder]",
+  "Emergency Medicine (Shadowing)",
+  "Differential Diagnosis",
 ];
 
 const softSkills = [
   "Scientific Communication",
+  "Academic Tutoring & Mentorship",
   "Cross-disciplinary Collaboration",
   "Technical Writing",
   "Public Presentation",
-  "Critical Thinking",
-  "Adaptability",
-  "[Additional skill — placeholder]",
+  "MS Office Suite",
+  "Google Suite",
+  "CPR Certified",
+];
+
+const languages = [
+  { lang: "English", level: "Native" },
+  { lang: "Malayalam", level: "Fluent" },
+  { lang: "Latin", level: "Seal of Biliteracy" },
 ];
 
 const categories = [
@@ -47,7 +61,7 @@ const categories = [
     header: "text-sky-700",
   },
   {
-    title: "Communication & Leadership",
+    title: "Communication & Productivity",
     skills: softSkills,
     dot: "bg-violet-400",
     border: "border-violet-100",
@@ -92,10 +106,18 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Languages placeholder */}
-        <div className="mt-8 p-6 rounded-2xl border border-dashed border-slate-200 bg-slate-50">
-          <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider mb-2">Languages</p>
-          <p className="text-slate-400 text-sm italic">[Placeholder — add languages spoken and proficiency levels]</p>
+        {/* Languages */}
+        <div className="mt-8 p-6 rounded-2xl border border-slate-200 bg-slate-50">
+          <p className="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-4">Languages</p>
+          <div className="flex flex-wrap gap-3">
+            {languages.map((l) => (
+              <div key={l.lang} className="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-full shadow-sm">
+                <span className="text-slate-900 font-medium text-sm">{l.lang}</span>
+                <span className="text-slate-400 text-xs">·</span>
+                <span className="text-blue-600 text-xs font-medium">{l.level}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

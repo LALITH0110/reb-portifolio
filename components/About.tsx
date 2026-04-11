@@ -5,17 +5,17 @@ export default function About() {
     {
       icon: <Microscope size={20} className="text-blue-500" />,
       label: "Research Focus",
-      value: "Clinical laboratory science, immunology, endocrinology",
+      value: "Clinical laboratory science, microfluidics, immunology & endocrinology",
     },
     {
       icon: <Heart size={20} className="text-rose-400" />,
-      label: "Driven By",
-      value: "Patient-centered care and evidence-based medicine",
+      label: "Career Goal",
+      value: "Osteopathic physician specializing in pediatrics",
     },
     {
       icon: <BookOpen size={20} className="text-sky-500" />,
       label: "Next Step",
-      value: "Medical school at LECOM",
+      value: "D.O. program at Lake Erie College of Osteopathic Medicine (LECOM)",
     },
   ];
 
@@ -36,23 +36,34 @@ export default function About() {
 
             <p className="text-slate-600 leading-relaxed mb-5">
               I&apos;m a pre-medical biology student at Illinois Institute of Technology (graduating May 2026),
-              and an incoming medical student at LECOM. My academic journey has been shaped by a
-              deep curiosity about how science can transform patient outcomes.
+              with minors in Psychology and Pre-Medical Studies. I&apos;m an incoming D.O. student at LECOM,
+              pursuing my lifelong goal of becoming an osteopathic physician in pediatrics.
             </p>
             <p className="text-slate-600 leading-relaxed mb-5">
-              From hands-on laboratory research at Mayo Clinic using LC-MS/MS and immunoassay platforms,
-              to innovating assistive technology through Illinois Tech&apos;s IPRO program, I seek opportunities
-              that combine rigorous science with meaningful human impact.
+              From clinical research at Mayo Clinic using LC-MS/MS and immunoassay platforms,
+              to microfluidics research at the Bhushan Laboratory, to consulting on naturopathic
+              approaches to coronary heart disease — I seek every opportunity to connect science
+              with patient care.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              Outside the lab and classroom, I care deeply about community, mentorship, and making
-              medicine more accessible and communicable to everyone.
+              Outside the lab, I mentor students as a tutor and Hawk Ambassador at Illinois Tech,
+              and volunteer at Lurie Children&apos;s Hospital — where I get to remind myself every day
+              why I chose this path.
             </p>
 
-            {/* Fun facts placeholder */}
-            <div className="mt-8 p-4 rounded-xl border border-dashed border-blue-200 bg-blue-50/40">
-              <p className="text-xs text-blue-500 font-semibold uppercase tracking-wider mb-1">Personal Fun Facts</p>
-              <p className="text-slate-400 text-sm italic">[Placeholder — add 2–3 personal fun facts here]</p>
+            {/* Fun facts */}
+            <div className="mt-8 grid grid-cols-2 gap-3">
+              {[
+                { label: "Languages", value: "English, Malayalam" },
+                { label: "Latin Seal", value: "Seal of Biliteracy" },
+                { label: "Certified", value: "CPR Certified" },
+                { label: "Location", value: "Tinley Park, IL" },
+              ].map((f) => (
+                <div key={f.label} className="p-3 rounded-xl bg-slate-50 border border-slate-100">
+                  <p className="text-xs text-slate-400 uppercase tracking-wide font-medium">{f.label}</p>
+                  <p className="text-slate-800 text-sm font-medium mt-0.5">{f.value}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -73,10 +84,11 @@ export default function About() {
               </div>
             ))}
 
-            {/* Quote / statement placeholder */}
+            {/* Quote */}
             <div className="mt-2 p-5 rounded-2xl bg-gradient-to-br from-blue-600 to-sky-500 text-white">
               <p className="text-sm font-light leading-relaxed italic">
-                &ldquo;[Placeholder — add a personal statement or quote that reflects your philosophy about medicine and communication]&rdquo;
+                &ldquo;Eager to contribute to scientific exploration and gain hands-on experience in biology —
+                hoping to eventually excel as an osteopathic physician in the field of pediatrics.&rdquo;
               </p>
               <p className="text-blue-100 text-xs mt-3">— Rebecca Mammarappallil</p>
             </div>
