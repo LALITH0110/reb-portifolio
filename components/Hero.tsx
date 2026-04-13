@@ -26,10 +26,6 @@ export default function Hero() {
           />
         </div>
 
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-medium mb-6 tracking-wide uppercase">
-          Future Physician · Distinguished Communicator
-        </div>
-
         <h1
           className="text-5xl sm:text-6xl font-bold text-slate-900 mb-4 leading-tight"
           style={{ fontFamily: "var(--font-playfair), serif" }}
@@ -44,7 +40,7 @@ export default function Hero() {
         </p>
 
         <p className="text-base text-blue-600 font-medium mb-8">
-          Incoming D.O. Student · LECOM · Future Pediatrician
+          Incoming D.O. Student · LECOM
         </p>
 
         <p className="text-slate-500 max-w-xl mx-auto text-base leading-relaxed mb-10">

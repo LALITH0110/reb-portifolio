@@ -5,11 +5,10 @@ const education = [
     school: "Lake Erie College of Osteopathic Medicine (LECOM)",
     degree: "Doctor of Osteopathic Medicine (D.O.)",
     period: "2026 – 2030 (Expected)",
-    location: "[Campus — Placeholder]",
+    location: "Erie, PA",
     details: [
       "Incoming osteopathic medical student",
       "Focus: Pediatric medicine",
-      "[Additional details — placeholder]",
     ],
     badge: "Incoming",
     badgeColor: "bg-emerald-100 text-emerald-700",
