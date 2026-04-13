@@ -87,7 +87,7 @@ const workExperience = [
     role: "Hawk Ambassador & Lead Ambassador",
     org: "Office of Undergraduate Admissions — Illinois Institute of Technology",
     location: "Chicago, IL",
-    period: "May 2023 – Present",
+    period: "May 2023 – May 2026",
     type: "Leadership",
     typeColor: "bg-amber-100 text-amber-700",
     description:
@@ -98,6 +98,23 @@ const workExperience = [
       "Supported students applying to undergraduate programs",
     ],
     logo: "HA",
+    logoBg: "bg-amber-600",
+  },
+  {
+    role: "Events Assistant",
+    org: "Office of Undergraduate Admissions — Illinois Institute of Technology",
+    location: "Chicago, IL",
+    period: "Aug 2025 – Present · Part-time",
+    type: "Leadership",
+    typeColor: "bg-amber-100 text-amber-700",
+    description:
+      "Support the Undergraduate Admission team by helping plan and execute on-campus and off-campus events that engage and inform prospective students and their families.",
+    highlights: [
+      "Plan and execute on-campus and off-campus prospective student events",
+      "Provides admission counseling support to prospective students and families",
+      "Collaborates with student ambassadors on enrollment initiatives",
+    ],
+    logo: "EA",
     logoBg: "bg-amber-600",
   },
 ];
