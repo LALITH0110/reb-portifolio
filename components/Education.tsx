@@ -21,7 +21,6 @@ const education = [
     period: "Aug 2022 – May 2026",
     location: "Chicago, IL",
     details: [
-      "Distinguished Communicator Medal Program",
       "Dean's List — multiple semesters",
       "Congress of Future Medical Leaders Award of Excellence nominee (May 2022)",
       "IPRO interdisciplinary project program",
@@ -34,12 +33,6 @@ const education = [
 ];
 
 const awards = [
-  {
-    title: "Distinguished Communicator Medal",
-    org: "Illinois Institute of Technology",
-    year: "2026",
-    desc: "Awarded for outstanding achievement in professional communication across disciplines.",
-  },
   {
     title: "Dean's List",
     org: "Illinois Institute of Technology",

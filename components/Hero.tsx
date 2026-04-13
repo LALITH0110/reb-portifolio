@@ -1,4 +1,5 @@
 import { Mail, ChevronDown, FileText } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -15,9 +16,14 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
         {/* Photo placeholder */}
-        <div className="mx-auto mb-8 w-36 h-36 rounded-full bg-gradient-to-br from-blue-100 to-sky-200 border-4 border-white shadow-lg flex items-center justify-center">
-          {/* Replace src with actual photo: <Image src="/rebecca.jpg" alt="Rebecca Mammarappallil" fill className="rounded-full object-cover" /> */}
-          <span className="text-4xl font-semibold text-blue-400 select-none" style={{ fontFamily: "var(--font-playfair), serif" }}>RM</span>
+        <div className="mx-auto mb-8 w-48 h-48 rounded-full border-4 border-white shadow-lg overflow-hidden relative">
+          <Image
+            src="/profile_pic.jpeg"
+            alt="Rebecca Mammarappallil"
+            fill
+            className="object-cover object-top"
+            priority
+          />
         </div>
 
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-medium mb-6 tracking-wide uppercase">
