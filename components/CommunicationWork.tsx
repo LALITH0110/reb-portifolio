@@ -5,23 +5,22 @@ const samples = [
   {
     title: "Pedal to the Future — Innovation Day",
     type: "Poster & Presentation",
-    course: "IPRO Program · Illinois Institute of Technology · 2024–2025",
+    course: "IPRO Program · Illinois Tech · Fall 2025",
     icon: <Presentation size={20} className="text-blue-600" />,
     iconBg: "bg-blue-50 border-blue-100",
-    tag: "Poster + Slide Deck",
+    tag: "Poster",
     tagColor: "bg-blue-100 text-blue-700",
     image: "/innovation-day-pic.jpeg",
     description:
       "This poster and presentation showcase Team Pedal to the Future's adaptive cycling cushion — designed to help individuals with mobility limitations maintain safe leg positioning during adaptive cycling. The visual-first format, combining clear engineering diagrams, universal design principles, and plain language, was chosen deliberately to speak across a broad audience of engineers, clinicians, and community members at Illinois Tech's Innovation Day. By pairing research-backed evidence with prototype imagery and patient-centered storytelling, the work made a technical biomedical solution immediately compelling to a non-specialist audience.",
     links: [
       { label: "View Poster", href: "/PTTF Innovation Day Posters.pdf" },
-      { label: "View Presentation", href: "/PTTF Innovation Day Presentation.pdf" },
     ],
   },
   {
     title: "RSV Prevention in Infants",
     type: "Slide Presentation",
-    course: "Biology · Illinois Institute of Technology",
+    course: "BIOL 451: Biological Literature · Illinois Tech · Spring 2026",
     icon: <Presentation size={20} className="text-sky-600" />,
     iconBg: "bg-sky-50 border-sky-100",
     tag: "Slide Deck",
